@@ -8,12 +8,13 @@
 /* 
  * Copyleft credit 
  */
-#define SKETCH_VERSION  "200105A"   // YYMMDD[A-Z]
+#define SKETCH_VERSION  "200108A"   // YYMMDD[A-Z]
 #define SKETCH_AUTHOR   "ALPHAMUSK" // Credit 
 
 
 /* 
  *   Thingsboard Server 
  */
+// #define TB_SERVER  "demo.thingsboard.io" 
 #define TB_SERVER  "10.0.1.254"     
 #define TB_SERVER_PORT 1883
