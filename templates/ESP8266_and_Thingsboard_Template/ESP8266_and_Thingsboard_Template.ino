@@ -71,12 +71,13 @@ void setup() {
   }
   Serial.println();
 
+  delay(10);
+  
   // Wifi
   connectWifi();
 
   // Thingsboard delays & timing
   tb_last_send = 0;
-
 }
 
 
@@ -103,7 +104,6 @@ void loop() {
 
   // Must loop to keep tb connected
   tb.loop();
-    
 }
 
 
