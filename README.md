@@ -1,4 +1,8 @@
-[ESP8266_and_Thingsboard_MQTT_PubSub_callback_template.ino](https://raw.githubusercontent.com/alphamusk/Arduino-ESP8266/master/templates/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template.ino)
+# Common Arduino Templates
+
+[ESP8266_and_Thingsboard_MQTT_PubSub_callback_template.ino](https://github.com/alphamusk/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template.ino)
+
+[ESP8266_and_Thingsboard_Template.ino] (https://github.com/alphamusk/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_Template/ESP8266_and_Thingsboard_Template.ino)
 
 ## Welcome to GitHub Pages
 
