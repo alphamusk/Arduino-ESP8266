@@ -52,13 +52,18 @@ int tb_retry_connect_delay = 5000; // In ms, how long to wait before we retry co
  */
  
 /* ESP8266 NODEMCU */
-#define GPIO1 1
-#define GPIO2 2
-#define GPIO1_PIN 1
+#define GPIO2 2 // D2
+#define GPIO4 4 // D4
+#define GPIO5 5 // D1
+#define GPIO12 12 // D6
+
 #define GPIO2_PIN 2
+#define GPIO4_PIN 4
+#define GPIO5_PIN 5
+#define GPIO12_PIN 12
 
 // We assume that all GPIOs are HIGH, aka off
-boolean gpioState[] = {false, false};
+boolean gpioState[] = {false, false, false, false};
 
 
 //////////////////////
@@ -79,8 +84,10 @@ void setup() {
   Serial.println();
   
   // Set output mode for all GPIO pins
-  pinMode(GPIO1, OUTPUT); digitalWrite(GPIO1, HIGH); // NodeMCU is backwards, Arduino is LOW
-  pinMode(GPIO2, OUTPUT);  digitalWrite(GPIO2, HIGH); // NodeMCU is backwards, Arduino is LOW
+  pinMode(GPIO2, OUTPUT); digitalWrite(GPIO2, HIGH);  // NodeMCU is backwards, Arduino is LOW
+  pinMode(GPIO4, OUTPUT); digitalWrite(GPIO4, LOW);
+  pinMode(GPIO5, OUTPUT); digitalWrite(GPIO5, LOW);
+  pinMode(GPIO12, OUTPUT); digitalWrite(GPIO12, LOW);  
   
   delay(10);
   
@@ -164,8 +171,10 @@ void on_message(const char* topic, byte* payload, unsigned int length) {
 
 String get_gpio_status() {
     StaticJsonDocument<200> jsonDoc;
-    jsonDoc[String(GPIO1_PIN)] = gpioState[1] ? true : false; // NodeMCU is backwards, default should be HIGH : LOW for arduino
-    jsonDoc[String(GPIO2_PIN)] = gpioState[2] ? true : false; // NodeMCU is backwards, default should be HIGH : LOW for arduino
+    jsonDoc[String(GPIO2_PIN)] = gpioState[0] ? true : false; // NodeMCU is backwards, default should be HIGH : LOW for arduino
+    jsonDoc[String(GPIO4_PIN)] = gpioState[1] ? true : false;
+    jsonDoc[String(GPIO5_PIN)] = gpioState[2] ? true : false;
+    jsonDoc[String(GPIO12_PIN)] = gpioState[3] ? true : false;
     char payload[256];
     serializeJson(jsonDoc, payload);
     String strPayload = String(payload);
@@ -175,21 +184,40 @@ String get_gpio_status() {
 }
 
 void set_gpio_status(int pin, boolean enabled) {
-  
-  if (pin == GPIO1_PIN) {
-    
-    // Output GPIOs state
-    digitalWrite(GPIO1, enabled ? LOW : HIGH); // NodeMCU is backwards, Arduino is HIGH : LOW
-    // Update GPIOs state
-    gpioState[1] = enabled;
-    
-  }
+
   if (pin == GPIO2_PIN) {
     
     // Output GPIOs state
     digitalWrite(GPIO2, enabled ? LOW : HIGH); // NodeMCU is backwards, Arduino is HIGH : LOW
     // Update GPIOs state
+    gpioState[0] = enabled;
+    
+  }
+  
+  if (pin == GPIO4_PIN) {
+    
+    // Output GPIOs state
+    digitalWrite(GPIO4, enabled ? HIGH : LOW);
+    // Update GPIOs state
+    gpioState[1] = enabled;
+    
+  }
+  
+  if (pin == GPIO5_PIN) {
+    
+    // Output GPIOs state
+    digitalWrite(GPIO5, enabled ? HIGH : LOW); 
+    // Update GPIOs state
     gpioState[2] = enabled;
+    
+  }
+
+  if (pin == GPIO12_PIN) {
+    
+    // Output GPIOs state
+    digitalWrite(GPIO12, enabled ? HIGH : LOW); 
+    // Update GPIOs state
+    gpioState[3] = enabled;
     
   }
 }
