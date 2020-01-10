@@ -2,9 +2,13 @@
 _MQTT Publishing aka callback using ```PubSubClient.h``` library_
 - [View Sketch](https://github.com/alphamusk/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template.ino)
 
+
+
 #### Basic ESP8266 Thingsboard Sketch
 _Uses ```ESP8266WiFi.h``` and ```ThingsBoard.h``` libraries_
 - :file: [View Sketch](https://github.com/alphamusk/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_Template/ESP8266_and_Thingsboard_Template.ino)
+
+
 
 #### Configuring common vars
 The ```config.h``` include header file
@@ -30,6 +34,8 @@ The ```config.h``` include header file
 #define TB_SERVER  "10.0.1.254"     
 #define TB_SERVER_PORT 1883
 ```
+
+
 
 #### Setting credentials for authentication
 The ```default_credentials.h``` include header file. Rename the file to ```credentials.h```
@@ -68,6 +74,8 @@ The ```default_credentials.h``` include header file. Rename the file to ```crede
   #define MY_MQTT_PASSWORD "123456789"  
 #endif              
 ```
+
+
 
 ### Markdown
 ```markdown
