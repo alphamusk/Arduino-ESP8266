@@ -6,7 +6,7 @@ _MQTT Publishing aka callback using ```PubSubClient.h``` library_
 
 #### Basic ESP8266 Thingsboard Sketch
 _Uses ```ESP8266WiFi.h``` and ```ThingsBoard.h``` libraries_
-- :file: [View Sketch](https://github.com/alphamusk/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_Template/ESP8266_and_Thingsboard_Template.ino)
+:file: - [View Sketch](https://github.com/alphamusk/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_Template/ESP8266_and_Thingsboard_Template.ino)
 
 
 
