@@ -74,9 +74,9 @@ The ```default_credentials.h``` include header file. Rename the file to ```crede
 
 
 ### TODO
-[ ] Do something
-[ ] Do something also
-[ ] Do something again
+- [] Do something
+- [] Do something also
+- [] Do something again
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
