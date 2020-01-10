@@ -6,6 +6,26 @@ _MQTT Publishing aka callback using ```PubSubClient.h``` library_
 _Uses ```ESP8266WiFi.h``` and ```ThingsBoard.h``` libraries_
 - [Download Sketch](https://github.com/alphamusk/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_Template/ESP8266_and_Thingsboard_Template.ino)
 
+## The ```config.h``` include header file
+```
+/* 
+ * config.h
+ * 
+ * Common settings, change as needed
+ */
+#include "config.h"
+```
+
+## The ```default_credentials.h``` include header file
+```
+/* 
+ * Rename default_credentials.h to credentials.h
+ * 
+ * Credentials can be set here or by changing the parameters in  
+ * default_credentials and then renaming the file to credentials.h
+ */
+#include "credentials.h"  
+```
 
 ### Markdown
 ```markdown
