@@ -74,7 +74,10 @@ The ```default_credentials.h``` include header file. Rename the file to ```crede
 
 
 ### TODO
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+- [ ] Do something
+- [ ] Do something also
+- [ ] Do something again
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 
 ### Markdown
 ```markdown
