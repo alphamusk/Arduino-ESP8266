@@ -1,5 +1,6 @@
-# Common Arduino Templates
+## Common Arduino Templates
 
+### ESP8266 GPIO Publishing to Thingsboard using ArduinoJson6
 - [ESP8266_and_Thingsboard_MQTT_PubSub_callback_template.ino](https://github.com/alphamusk/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template.ino)
 _Fixed compile errors when using latest version of_ ```ArduinoJson6```
 
