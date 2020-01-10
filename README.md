@@ -1,10 +1,10 @@
 ### ESP8266 GPIO Pin Sketch using ArduinoJson6
 _MQTT Publishing aka callback using ```PubSubClient.h``` library_
-- [Download Sketch](https://github.com/alphamusk/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template.ino)
+- [View Sketch](https://github.com/alphamusk/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template.ino)
 
 #### Basic ESP8266 Thingsboard Sketch
 _Uses ```ESP8266WiFi.h``` and ```ThingsBoard.h``` libraries_
-- [Download Sketch](https://github.com/alphamusk/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_Template/ESP8266_and_Thingsboard_Template.ino)
+- :file: [View Sketch](https://github.com/alphamusk/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_Template/ESP8266_and_Thingsboard_Template.ino)
 
 #### Configuring common vars
 The ```config.h``` include header file
