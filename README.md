@@ -8,7 +8,7 @@ _Uses ```ESP8266WiFi.h``` and ```ThingsBoard.h``` libraries_
 
 #### Configuring common vars
 The ```config.h``` include header file
-```C
+```C++
 /* 
  *  Common configs header file
  */
@@ -33,7 +33,7 @@ The ```config.h``` include header file
 
 #### Setting credentials for authentication
 The ```default_credentials.h``` include header file. Rename the file to ```credentials.h```
-```C
+```C++
 /*
  * Credentials header file
  */
