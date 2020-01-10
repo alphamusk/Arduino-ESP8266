@@ -74,28 +74,9 @@ The ```default_credentials.h``` include header file. Rename the file to ```crede
 
 
 ### TODO
-- [ ] Do something
-- [ ] Do something also
-- [ ] Do something again
+[ ] Do something
+[ ] Do something also
+[ ] Do something again
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-
-### Markdown
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
