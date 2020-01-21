@@ -1,4 +1,11 @@
 /* 
+ * Author: Tracey Flanders
+ * Fixes: N/A
+ * ESP8266_and_Thingsboard_Template
+ * Using Thingsboard on ESP8266 to publish telemetry
+ */
+
+/* 
  * config.h
  * 
  * Common settings, change as needed
