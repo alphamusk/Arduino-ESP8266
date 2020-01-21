@@ -1,4 +1,8 @@
-[Documentation](http://arduino-esp8266.traceyflanders.com)
+# [Documentation](http://arduino-esp8266.traceyflanders.com)
+
+Clone this github repo
+```git clone https://github.com/traceyflanders/Arduino-ESP8266.git```
+
 
 ### ThingsBoard ESP8266 GPIO Pin Sketch using ArduinoJson6
 _MQTT Publishing aka callback using ```PubSubClient.h``` library_
