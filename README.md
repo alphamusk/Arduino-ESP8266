@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-> Clone the repo
+Clone the repo
 ```git clone https://github.com/traceyflanders/Arduino-ESP8266.git```
 
 
