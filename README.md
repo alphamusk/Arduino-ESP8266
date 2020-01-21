@@ -8,6 +8,8 @@ Clone the repo
 
 ### Changing config.h
 Adjust the ```config.h``` include header file with your preferred BAUD_RATE, DEBUG flag and Thingsboard server, specifying the DNS name or IP address.
+
+##### config.h
 ```C++
 /* 
  *  Common configs header file
@@ -35,6 +37,8 @@ Adjust the ```config.h``` include header file with your preferred BAUD_RATE, DEB
 ### Setting credentials for authentication to Wifi and Thingsboard
 Rename the ```default_credentials.h``` include header file to ```credentials.h```
 Make changes to the WIFI, Thingsboard API Token and MQTT credentials (optional).
+
+##### default_credentials.h
 ```C++
 /*
  * Credentials header file
