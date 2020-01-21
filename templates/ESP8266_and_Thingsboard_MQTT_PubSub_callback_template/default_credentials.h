@@ -24,7 +24,7 @@
 #endif
 
 
-/* MQTT credentials
+/* MQTT credentials (Optional)
  * Change to your mqtt username & password
  */
 #ifndef MY_MQTT_USERNAME
