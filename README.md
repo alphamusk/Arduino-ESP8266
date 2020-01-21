@@ -77,12 +77,3 @@ The ```default_credentials.h``` include header file. Rename the file to ```crede
   #define MY_MQTT_PASSWORD "123456789"  
 #endif              
 ```
-
-
-### TODO
-- [] Do something
-- [] Do something also
-- [] Do something again
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
