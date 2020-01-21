@@ -1,4 +1,11 @@
 /* 
+ * Author: Tracey Flanders
+ * Fixes: Compatabile with ArduinoJson6
+ * ESP8266_and_Thingsboard_MQTT_PubSub_callback_template
+ * Using Thingsboard on ESP8266 to subscribe and publish to topics
+ */
+
+/* 
  * config.h
  * 
  * Common settings, change as needed
