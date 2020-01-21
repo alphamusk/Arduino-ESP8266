@@ -7,7 +7,7 @@ Clone the repo
 
 
 ### Changing config.h
-The ```config.h``` include header file
+Adjust the ```config.h``` include header file with your preferred BAUD_RATE, DEBUG flag and Thingsboard server dns name or IP address.
 ```C++
 /* 
  *  Common configs header file
