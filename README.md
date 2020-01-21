@@ -38,7 +38,7 @@ Adjust the ```config.h``` include header file with your preferred BAUD_RATE, DEB
 Rename the ```default_credentials.h``` include header file to ```credentials.h```
 Make changes to the WIFI, Thingsboard API Token and MQTT credentials (optional).
 
-##### default_credentials.h
+##### credentials.h
 ```C++
 /*
  * Credentials header file
