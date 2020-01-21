@@ -1,3 +1,5 @@
+[Documentation](http://arduino-esp8266.traceyflanders.com)
+
 ### ThingsBoard ESP8266 GPIO Pin Sketch using ArduinoJson6
 _MQTT Publishing aka callback using ```PubSubClient.h``` library_
 - [View Sketch](https://github.com/traceyflanders/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template.ino)
