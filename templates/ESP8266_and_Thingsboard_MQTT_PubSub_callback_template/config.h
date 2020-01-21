@@ -9,7 +9,7 @@
  * Copyleft credit 
  */
 #define SKETCH_VERSION  "200108A"   // YYMMDD[A-Z]
-#define SKETCH_AUTHOR   "ALPHAMUSK" // Credit 
+#define SKETCH_AUTHOR   "Tracey Flanders" // Credit 
 
 
 /* 
