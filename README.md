@@ -34,7 +34,7 @@ The ```config.h``` include header file
 
 ### Setting credentials for authentication to Wifi and Thingsboard
 Rename the ```default_credentials.h``` include header file to ```credentials.h```
-Make changes to the WIFI, Thingsboard API Token and MQTT credentials (optional)
+Make changes to the WIFI, Thingsboard API Token and MQTT credentials (optional).
 ```C++
 /*
  * Credentials header file
@@ -62,7 +62,7 @@ Make changes to the WIFI, Thingsboard API Token and MQTT credentials (optional)
 #endif
 
 
-/* MQTT credentials
+/* MQTT credentials (Optional)
  * Change to your mqtt username & password
  */
 #ifndef MY_MQTT_USERNAME
