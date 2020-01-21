@@ -1,20 +1,12 @@
 # [Documentation](http://arduino-esp8266.traceyflanders.com)
 
-Clone this github repo
+## Getting Started
+
+> Clone the repo
 ```git clone https://github.com/traceyflanders/Arduino-ESP8266.git```
 
 
-### ThingsBoard ESP8266 GPIO Pin Sketch using ArduinoJson6
-_MQTT Publishing aka callback using ```PubSubClient.h``` library_
-- [View Sketch](https://github.com/traceyflanders/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template/ESP8266_and_Thingsboard_MQTT_PubSub_callback_template.ino)
-
-
-#### Basic ESP8266 Thingsboard Sketch
-_Uses ```ESP8266WiFi.h``` and ```ThingsBoard.h``` libraries_
-- [View Sketch](https://github.com/traceyflanders/Arduino-ESP8266/blob/master/templates/ESP8266_and_Thingsboard_Template/ESP8266_and_Thingsboard_Template.ino)
-
-
-#### Configuring common vars
+### Changing config.h
 The ```config.h``` include header file
 ```C++
 /* 
@@ -40,7 +32,7 @@ The ```config.h``` include header file
 ```
 
 
-#### Setting credentials for authentication
+### Setting credentials for authentication to Wifi and Thingsboard
 The ```default_credentials.h``` include header file. Rename the file to ```credentials.h```
 ```C++
 /*
