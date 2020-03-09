@@ -51,11 +51,13 @@ Make changes to the WIFI, Thingsboard API Token and MQTT credentials (optional).
  * WIFI Credentials 
  * Change to your wifi name and password 
  */
-#ifndef MY_WIFI_SSID 
+#ifndef MY_WIFI_SSID
   #define MY_WIFI_SSID "cool_wifi_name"
-  #define MY_WIFI_PASSWORD "super_duper_password"   
 #endif
 
+#ifndef  MY_WIFI_PASSWORD
+  #define MY_WIFI_PASSWORD "super_duper_password"  
+#endif
 
 /*
  * Thingsboard API Token 
@@ -65,14 +67,16 @@ Make changes to the WIFI, Thingsboard API Token and MQTT credentials (optional).
   #define MY_TB_TOKEN "123456789"
 #endif
 
-
 /* MQTT credentials (Optional)
  * Change to your mqtt username & password
  */
 #ifndef MY_MQTT_USERNAME
-  #define MY_MQTT_USERNAME "abcefg"
-  #define MY_MQTT_PASSWORD "123456789"  
-#endif              
+  #define MY_MQTT_USERNAME "your_username_here"
+#endif
+
+#ifndef MY_MQTT_PASSWORD
+  #define MY_MQTT_PASSWORD "your_password_here"
+#endif
 ```
 ### Finishing up
 Upload the sketch to your ESP8266. Check your Thingsboard dashboard to ensure you can see telemetry updating and/or you can control your device through a widget.
