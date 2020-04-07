@@ -36,6 +36,7 @@ const char* wifi_ssid = MY_WIFI_SSID;
 const char* wifi_password = MY_WIFI_PASSWORD;
 String mac_address;
 String ip_address;
+int wifi_signal;
 int wifi_connection_attempts = 0;
 int wifi_connection_attempts_max = 20;
 
@@ -137,12 +138,15 @@ void sendTelemetryData() {
   // Get temperature data, mock up example of random number
   float temperature = random(-15, 120);
   float humidity = random(0, 100);
+
+  // Wifi Signal Strength
+  wifi_signal = WiFi.RSSI();
   
   #if DEBUG 
       Serial.print("temperature: "); Serial.print(temperature); Serial.println();
       Serial.print("humidity: "); Serial.print(humidity); Serial.println();
       Serial.print("wifi_ssid: "); Serial.print(wifi_ssid); Serial.println();
-      Serial.print("wifi_signal: "); Serial.print(WiFi.RSSI()); Serial.println();
+      Serial.print("wifi_signal: "); Serial.print(wifi_signal); Serial.println();
       Serial.print("ip_address: "); Serial.print(WiFi.localIP().toString()); Serial.println();
       Serial.print("mac_address: "); Serial.print(WiFi.macAddress()); Serial.println();
       Serial.println(); Serial.println();
@@ -153,7 +157,7 @@ void sendTelemetryData() {
   tb.sendTelemetryFloat("humidity", humidity);
 
   tb.sendTelemetryString("wifi_ssid", wifi_ssid);
-  tb.sendTelemetryInt("wifi_signal", WiFi.RSSI()); 
+  tb.sendTelemetryInt("wifi_signal", wifi_signal); 
   tb.sendTelemetryString("ip_address", WiFi.localIP().toString().c_str());
   tb.sendTelemetryString("mac_address", WiFi.macAddress().c_str());
 }
@@ -174,6 +178,7 @@ void connectWifi() {
   Serial.print(wifi_ssid);
 
   WiFi.begin(wifi_ssid, wifi_password);
+  WiFi.softAPdisconnect(true); // Don't broadcast an SSID from this ESP
   
   while (WiFi.status() != WL_CONNECTED) {
     Serial.print(".");

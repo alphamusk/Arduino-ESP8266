@@ -245,6 +245,7 @@ void connectWifi() {
   Serial.print(wifi_ssid);
 
   WiFi.begin(wifi_ssid, wifi_password);
+  WiFi.softAPdisconnect(true); // Don't broadcast an SSID from this ESP
   
   while (WiFi.status() != WL_CONNECTED) {
     Serial.print(".");
