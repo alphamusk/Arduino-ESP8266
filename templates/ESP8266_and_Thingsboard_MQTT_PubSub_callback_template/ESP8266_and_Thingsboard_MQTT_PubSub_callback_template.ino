@@ -304,7 +304,7 @@ void reconnect() {
     // Attempt to connect (clientId, username, password)
     if (client.connect("ESP8266 Device", tb_token, NULL)) {
       
-      Serial.println( "[DONE]" );
+      Serial.println( " [DONE]" );
       
       // Subscribing to receive RPC requests
       client.subscribe("v1/devices/me/rpc/request/+");
